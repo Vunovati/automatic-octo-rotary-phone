@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Vunovati/automatic-octo-rotary-phone/issues"
   },
-  "homepage": "https://github.com/Vunovati/automatic-octo-rotary-phone#readme"
+  "homepage": "https://github.com/Vunovati/automatic-octo-rotary-phone#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^18.2.0",
+    "@commitlint/config-conventional": "^18.1.0",
+    "husky": "^8.0.3"
+  }
 }
