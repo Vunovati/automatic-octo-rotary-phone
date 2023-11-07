@@ -1,0 +1,19 @@
+{
+  "name": "automatic-octo-rotary-phone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vunovati/automatic-octo-rotary-phone.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vunovati/automatic-octo-rotary-phone/issues"
+  },
+  "homepage": "https://github.com/Vunovati/automatic-octo-rotary-phone#readme"
+}
