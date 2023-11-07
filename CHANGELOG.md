@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.0.0...v1.1.0) (2023-11-07)
+
+
+### Features
+
+* update message ([6dc9586](https://github.com/Vunovati/automatic-octo-rotary-phone/commit/6dc95865e2bc82d1f0ba38f108793fd277c9d649))
+
 ## 1.0.0 (2023-11-07)
 
 
