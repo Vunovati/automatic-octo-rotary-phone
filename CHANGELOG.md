@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.2.0...v1.3.0) (2024-01-08)
+
+
+### Features
+
+* add express and dependabot ([a5f49d9](https://github.com/Vunovati/automatic-octo-rotary-phone/commit/a5f49d9490f417da9b22523ed2ed4868b0ab339f))
+
 ## [1.2.0](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.1.0...v1.2.0) (2023-11-07)
 
 
