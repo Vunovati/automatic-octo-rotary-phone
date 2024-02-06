@@ -22,13 +22,11 @@ jobs:
               break
             fi
             echo "Waiting for release-please workflow to complete"
-            sleep 60
+            sleep 20
           done
-      - name: Check if the latest commit is tagged
-        run: git fetch --depth=1 origin +refs/tags/*:refs/tags/* && git describe --exact-match
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
           registry-url: https://registry.npmjs.org/
       - run: npm ci
       - run: npm publish
