@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.6.1...v1.7.0) (2024-02-06)
+
+
+### Features
+
+* publish with provenance ([95dcea8](https://github.com/Vunovati/automatic-octo-rotary-phone/commit/95dcea8dfa15ee121f44f5e6043ea31b6f5a78bb))
+
 ## [1.6.1](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.6.0...v1.6.1) (2024-02-06)
 
 
