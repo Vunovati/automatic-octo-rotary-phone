@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.3.0...v1.4.0) (2024-02-06)
+
+
+### Features
+
+* add publish workflow ([f0026e7](https://github.com/Vunovati/automatic-octo-rotary-phone/commit/f0026e734b685b39ac40bdad174ca367ab95a81c))
+
 ## [1.3.0](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.2.0...v1.3.0) (2024-01-08)
 
 
