@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.4.1...v1.4.2) (2024-02-06)
+
+
+### Bug Fixes
+
+* env for NODE_AUTH_TOKEN ([1cfc097](https://github.com/Vunovati/automatic-octo-rotary-phone/commit/1cfc097deb755e4209c42021b0d62d77fb37cc70))
+
 ## [1.4.1](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.4.0...v1.4.1) (2024-02-06)
 
 
