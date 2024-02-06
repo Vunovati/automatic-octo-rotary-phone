@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.4.0...v1.4.1) (2024-02-06)
+
+
+### Bug Fixes
+
+* publish trigger ([214d250](https://github.com/Vunovati/automatic-octo-rotary-phone/commit/214d250f3f63555b17a6bafde300dfd3582ba80a))
+
 ## [1.4.0](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.3.0...v1.4.0) (2024-02-06)
 
 
