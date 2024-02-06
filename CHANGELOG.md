@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.7.0...v1.7.1) (2024-02-06)
+
+
+### Bug Fixes
+
+* permisions for token ([0893b25](https://github.com/Vunovati/automatic-octo-rotary-phone/commit/0893b254555a7deaaa8fea4119ecd190ab211368))
+
 ## [1.7.0](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.6.1...v1.7.0) (2024-02-06)
 
 
