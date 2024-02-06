@@ -1,23 +1,22 @@
-name: publish-on-tag-creation
+name: publish-on-pr-merge
 
 on:
-  create:
-    tags:
-      - "*"
-
-permissions:
-  id-token: write
+  pull_request:
+    types: [closed]
 
 jobs:
   publish-npm:
+    if: github.event.pull_request.merged == true && github.event.pull_request.user.login == 'github-actions[bot]' && contains(github.event.pull_request.head.ref, 'release-please')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check if the latest commit is tagged
+        run: git fetch --depth=1 origin +refs/tags/*:refs/tags/* && git describe --exact-match
       - uses: actions/setup-node@v3
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm publish --provenance
+      - run: npm publish
         env:
-          NODE_AUTH_TOKEN: $
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
