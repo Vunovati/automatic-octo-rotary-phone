@@ -10,11 +10,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Wait for release-please workflow to complete
+        run: |
+          merged_at=$(date -d"${{ github.event.pull_request.merged_at }}" +%s)
+          while : ; do
+            status=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              https://api.github.com/repos/${{ github.repository }}/actions/runs | \
+              jq -r --arg merged_at "$merged_at" \
+              '.workflow_runs[] | select(.name=="release-please" and (.created_at | sub("\\.[0-9]+Z$"; "Z") | fromdate | . > ($merged_at | tonumber))) | .status' | head -1)
+            if [ "$status" = "completed" ]; then
+              break
+            fi
+            echo "Waiting for release-please workflow to complete"
+            sleep 60
+          done
       - name: Check if the latest commit is tagged
         run: git fetch --depth=1 origin +refs/tags/*:refs/tags/* && git describe --exact-match
       - uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
       - run: npm publish
