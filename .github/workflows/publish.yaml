@@ -8,6 +8,9 @@ jobs:
   publish-npm:
     if: github.event.pull_request.merged == true && github.event.pull_request.user.login == 'github-actions[bot]' && contains(github.event.pull_request.head.ref, 'release-please')
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - uses: actions/checkout@v4
       - name: Wait for release-please workflow to complete
