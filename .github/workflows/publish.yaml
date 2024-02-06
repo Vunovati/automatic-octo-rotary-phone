@@ -12,10 +12,12 @@ jobs:
       - uses: actions/checkout@v4
       - name: Wait for release-please workflow to complete
         run: |
+          merged_at=$(date -d"${{ github.event.pull_request.merged_at }}" +%s)
           while : ; do
             status=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
               https://api.github.com/repos/${{ github.repository }}/actions/runs | \
-              jq -r '.workflow_runs[] | select(.name=="release-please") | .status' | head -1)
+              jq -r --arg merged_at "$merged_at" \
+              '.workflow_runs[] | select(.name=="release-please" and (.created_at | sub("\\.[0-9]+Z$"; "Z") | fromdate | . > ($merged_at | tonumber))) | .status' | head -1)
             if [ "$status" = "completed" ]; then
               break
             fi
