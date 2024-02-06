@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.6.0...v1.6.1) (2024-02-06)
+
+
+### Bug Fixes
+
+* skip checking tag ([0403ad4](https://github.com/Vunovati/automatic-octo-rotary-phone/commit/0403ad44b868845e7daf585c3c7ef15149383ea1))
+
 ## [1.6.0](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.5.0...v1.6.0) (2024-02-06)
 
 
