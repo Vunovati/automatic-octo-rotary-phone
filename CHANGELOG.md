@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.6.0](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.5.0...v1.6.0) (2024-02-06)
+
+
+### Features
+
+* select only the workflow runs that were created after the pull request was merged ([d879b48](https://github.com/Vunovati/automatic-octo-rotary-phone/commit/d879b481094fa8304dab7499419add38a51155d7))
+
+
+### Bug Fixes
+
+* wait for release please to finish before publishing ([6ccf1f0](https://github.com/Vunovati/automatic-octo-rotary-phone/commit/6ccf1f0bc7f1726f29ad2c3ae057cdcac47ef575))
+
 ## [1.5.0](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.4.2...v1.5.0) (2024-02-06)
 
 
