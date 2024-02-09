@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.2](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.7.1...v1.7.2) (2024-02-09)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/checkout from 3 to 4 ([#9](https://github.com/Vunovati/automatic-octo-rotary-phone/issues/9)) ([bdd28eb](https://github.com/Vunovati/automatic-octo-rotary-phone/commit/bdd28eb19e2a9c215f414979a169d55d92657290))
+
 ## [1.7.1](https://github.com/Vunovati/automatic-octo-rotary-phone/compare/v1.7.0...v1.7.1) (2024-02-06)
 
 
